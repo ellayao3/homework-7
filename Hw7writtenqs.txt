@@ -1,0 +1,11 @@
+ 2. What are some examples of how PHP and JavaScript are alike and how they differ? 
+PHP and JavaScript are both widely used languages in web development, with strong communities and support. They can both be embedded within HTML and offer extensive libraries and frameworks. However, they differ in their execution environments and primary use cases. PHP is primarily a server-side language for processing data and generating dynamic web pages, while JavaScript is a client-side language for creating interactive user interfaces and manipulating the DOM. Despite their similarities, they have distinct characteristics and are used for different purposes within web applications.
+
+3. Define MVC, what are the responsibilities of each piece? 
+MVC is the architectural/ design pattern that separates an application into three main logical components: Model, View, and Controller. Each component is built to handle specific development aspects of each application. It isolates the business logic and presentation layer from each other. 
+Model:
+The Model component corresponds to all the data-related logic that the user works with. This can represent either the data that is being transferred between the View and Controller components or any other business logic-related data. It can add or retrieve data from the database. It responds to the controller’s request because the controller can’t interact with the database by itself. The model interacts with the database and gives the required data back to the controller. 
+View:
+The View component is used for all the UI logic of the application. It generates a user interface for the user. Views are created by the data which is collected by the model component but these data are not taken directly but through the controller. It only interacts with the controller. 
+Controller:
+The Controller is the component that enables the interconnection between the views and the model, acting as the intermediary. The controller doesn't have to worry about handling data logic, it just tells the model what to do. It processes all the business logic and incoming requests, manipulates data using the Model component, and interacts with the View to render the final output. 
