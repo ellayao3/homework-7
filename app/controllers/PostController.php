@@ -10,8 +10,12 @@ class PostController extends Controller
     public function getPosts()
     {
         $postModel = new Post();
-        $posts = $postModel->getAllPosts(); // Assuming you have a method in Post model to fetch posts
+        #$posts = $postModel->getAllPosts(); // Assuming you have a method in Post model to fetch posts
         $template = $this->twig->load('post/posts.twig');
-        return $template->render(['posts' => $posts]);
+        $homepageData = [
+            'posts' => $userModel ->getAllPosts(),
+        ];
+        echo $template-> render($homePageData);
+        #return $template->render(['posts' => $posts]);
     }
 }
