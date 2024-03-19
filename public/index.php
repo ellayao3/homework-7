@@ -12,7 +12,6 @@ use app\controllers\PostController;
 
 
 $url = $_SERVER["REQUEST_URI"];
-echo $url;
 //todo add a switch statement router to route based on the url
 //if it is "/posts" return an array of posts via the post controller
 //if it is "/" return the homepage view from the main controller
