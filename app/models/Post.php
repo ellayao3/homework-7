@@ -4,18 +4,20 @@ namespace app\models;
 
 class Post
 {
-   //public function getAllPosts() {
-    //return [
-        //[
-           // 'id' => '1',
-          //  'title' => 'this is a title',
-          //  'views' => '103'
-       // ],
-       // [
-            //'id' => '3',
-          //  'title' => 'another title',
-            //'views' => '303'
-   //     ]
- //       ];
- //  }
+    public function getAllPosts()
+    {   
+        return [
+            [
+                'id' => '1',
+                'title' => 'first post',
+                'views' => '6'
+            ],
+            [
+                'id' => '2',
+                'title' => 'second post',
+                'views' => '6'
+            ]
+        ];
+
+    }
 }
