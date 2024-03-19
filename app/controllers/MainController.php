@@ -14,19 +14,19 @@ class MainController extends Controller
             'title' => 'Homepage Title',
         ];
 
-        echo $template->render($homepageData);
+        var_dump($homepageData);
     }
 
     public function notFound() {
         //todo create a 404 twig template in app/public/assets/views
         //an example is in app/controllers/UsersController
         //and return it from this method
-        $template = $this->twig->load('404/error.twig');
-        $EData = [
-            'title' => '404 Not Found!'
-        ];
+        //$template = $this->twig->load('404/error.twig');
+        //$EData = [
+        //    'title' => '404 Not Found!'
+        //];
 
-        echo $template -> render($EData);
+        echo '404';
     }
 
 }
